@@ -8,7 +8,7 @@ class Hospitais(models.Model):
     endereco = models.CharField(max_length=255)
     telefone = models.CharField(max_length=20)
     email = models.EmailField()
-    imagem = models.URLField(blank=True, null=True)
+    imagem = models.ImageField(upload_to='hospitais/', blank=True, null=True)
     hora_funcionamento = models.CharField(max_length=100)
     especialidades = models.TextField()
     latitude = models.FloatField(null=True, blank=True)

@@ -13,6 +13,11 @@ load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+#Media
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
 # Segurança
 SECRET_KEY = os.getenv("SECRET_KEY", "dev-secret-key")
 DEBUG = True
